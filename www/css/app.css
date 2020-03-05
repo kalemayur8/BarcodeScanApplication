@@ -1,0 +1,75 @@
+.hide {
+	display:none;
+}
+
+.show {
+	display:block;
+}
+
+.tab-item{
+	font-size: 1.5em;
+}
+
+.nav-group-title{
+	font-size: 1.2em;
+}
+
+th , a , label , td , .btn{
+	font-size: 1.2em;
+}
+.v-devider{
+  border-left: 3px solid lightgray;
+  height: 100%;
+}
+.tool-bar-height{
+    min-height : 31px !important;
+}
+
+h2 { color: #7c795d; font-family: 'Trocchi', serif; font-size: 31px; font-weight: bold; line-height: 48px; margin: 0; }
+
+.form-center-padding{
+    padding: 50% 8%
+}
+.form-right-center-padding{
+    padding: 32% 8%
+}
+.margin-left-rebooking{
+    margin-left : 35px !important;
+}
+.second-pane-border {
+    border-left: 0px solid #ddd
+}
+.custom-title{
+  font-size : 17px;
+}
+.div-display{
+    display:'none';
+    
+}
+.label-padding {
+    padding: 0px 07px
+}
+.label-div{
+    border-radius: 15px;
+    background-color : lightgray;
+}
+
+.label-div-blue{
+    border-radius: 15px;
+    background-color : lightblue;
+}
+
+.font-16px{
+    font-size: 16px;
+}
+.dot-color{
+    color:lightgray;
+}
+.flight-color{
+    background-color: lightcoral;
+}
+
+.main-div-style{
+    background-color:rgb(252, 251, 226);
+    border-radius:117px;
+}

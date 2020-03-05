@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    </style>
+</head>
+<body>
+<link rel="stylesheet" href="css/photon.min.css">
+<link rel="stylesheet" href="css/app.css">
+<script src="js/dbr.js" data-productKeys="PRODUCT-KEYS"></script>
+<!-- <script src="https://unpkg.com/dynamsoft-javascript-barcode@7.3.0-v2/dist/dbr.js" data-productKeys="PRODUCT-KEYS"></script> -->
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/constant.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+
+
+<div class="window">
+    <header class="toolbar toolbar-header tool-bar-height">
+      <h1 class="title custom-title">Emirates - Your personalised experience</h1>
+    </header>
+  <div class="window-content">
+    <div class="pane-group">
+      <div class="pane sidebar">
+          <nav class="nav-group">
+            <h5 class="nav-group-title">Favorites</h5>
+            <a class="nav-group-item active">
+             <span class="icon icon-vcard"></span>
+             Manage your Travel
+            </a>
+            <span class="nav-group-item">
+              <span class="icon icon-download"></span>
+              Downloads
+            </span>
+            <span class="nav-group-item">
+              <span class="icon icon-folder"></span>
+              Documents
+            </span>
+            <span class="nav-group-item">
+              <span class="icon icon-signal"></span>
+              AirPlay
+            </span>
+            <span class="nav-group-item">
+              <span class="icon icon-print"></span>
+              Applications
+            </span>
+            <span class="nav-group-item">
+              <span class="icon icon-cloud"></span>
+              Desktop
+            </span>
+          </nav>
+      </div>
+      <!--<div class="v-devider"></div>-->
+      <div class="pane">
+          <div class="form-center-padding">
+            <div>
+            <h2>Manage your Travel</h2>
+            <div class="form-group">
+              <label>Last Name</label>
+              <input id="paxName" class="form-control" placeholder="Last Name">
+            </div>
+            <div class="form-group">
+              <label>Booking Reference</label>
+              <input id="pnr" class="form-control" placeholder="Booking Reference">
+            </div>
+            <div class="form-actions">
+              <button onclick="searchPax('search')" id ="search" class="btn btn-form btn-primary">Search</button>
+              <button onclick="searchPax('upd')" id="upd" class="btn btn-form btn-primary">Update Personal Details</button>
+            </div>
+            </div>
+          </div>
+      </div>
+      <div class="pane second-pane-border">
+          <div id="scanImageId" class="form-center-padding">
+              <img onclick="scanBarcode()" src="img/scanner.png" alt="Avatar" class="image"></img>
+          </div>
+          <div id="searchResultId" class="form-right-center-padding div-display">
+              <div class="main-div-style">
+                <div class="form-group label-div">
+                  <label class="label-padding"><span class="icon icon-menu"></span>&nbsp;&nbsp;Flight Details</label>
+                </div>
+                <div class="form-group label-div-blue">
+                  <label><span class="icon icon-flight label-padding font-16px" id="flightDataId" ></span></label>
+               </div>
+              <div class="form-group label-div">
+                <label class="label-padding"><span class="icon icon-menu"></span>&nbsp;&nbsp;Passenger Name</label>
+              </div>
+              <div class="form-group label-div-blue">
+                <label id="paxNameValueId" class="label-padding"></label>
+              </div>
+              <div class="form-group label-div">
+                <label class="label-padding"><span class="icon icon-menu"></span>&nbsp;&nbsp;Reference</label>
+              </div>
+              <div class="form-group label-div-blue">
+                <label id="referenceValueId" class="label-padding"></label>
+              </div>
+              <div class="form-group label-div">
+                <label class="label-padding"><span class="icon icon-menu"></span>&nbsp;&nbsp;Seat Number</label>
+              </div>
+              <div class="form-group label-div-blue">
+                <label id="seatValueId" class="label-padding"></label>
+              </div>
+              <div class="form-actions">
+                <button onclick="checkIn()" class="btn btn-form btn-primary">Check In</button>
+                <button onclick="checkIn()" class="btn btn-form btn-primary margin-left-rebooking">Rebooking</button>
+              </div>
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

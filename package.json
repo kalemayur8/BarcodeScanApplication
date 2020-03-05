@@ -1,0 +1,24 @@
+{
+  "name": "socketcluster-sample",
+  "description": "A sample SocketCluster app",
+  "version": "1.0.1",
+  "contributors": [
+    {
+      "name": "Jonathan Gros-Dubois",
+      "email": "grosjona@yahoo.com.au"
+    },
+    {
+      "name": "Aza Noriega",
+      "email": "Aza.Noriega@gmail.com"
+    }
+  ],
+  "dependencies": {
+    "dynamsoft-javascript-barcode": "^7.3.0-v2",
+    "express": "^4.17.1"
+  },
+  "keywords": [],
+  "scripts": {
+    "start": "node server.js"
+  },
+  "devDependencies": {}
+}
